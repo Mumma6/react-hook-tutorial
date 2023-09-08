@@ -1,3 +1,10 @@
-console.log("Hello world")
+import { useState } from "react"
 
-export const sayHello = (name: string) => `Hello, ${name}`
+export function useForm(formData: any) {
+  const [values, setValues] = useState(formData)
+
+  return {
+    values,
+    setValues,
+  }
+}

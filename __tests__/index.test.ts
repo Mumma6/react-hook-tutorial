@@ -1,7 +1,14 @@
-import { sayHello } from "../src/index"
+import { renderHook, act } from "@testing-library/react-hooks"
+import { useForm } from "../src/index"
 
-describe("sayHello function", () => {
-  it("should return a greeting with the provided name", () => {
-    expect(sayHello("Martin")).toBe("Hello, Martin")
+describe("useFormHook", () => {
+  test("should update form values", () => {
+    const { result } = renderHook(() => useForm({ name: "", email: "" }))
+
+    act(() => {
+      result.current.setValues({ name: "John", email: "john@example.com" })
+    })
+
+    expect(result.current.values).toEqual({ name: "John", email: "john@example.com" })
   })
 })

@@ -15,4 +15,5 @@ module.exports = {
   plugins: [
     typescript()
   ],
+  external: ['react', 'react-dom']
 }
