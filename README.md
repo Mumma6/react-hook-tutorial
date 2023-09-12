@@ -1,5 +1,5 @@
-# NPM Package Tutorial
+# NPM React Package Tutorial
 
-This repository contains a step-by-step guide to creating, testing, and publishing an NPM package. Whether you're a beginner or an experienced developer, you'll find this tutorial helpful in understanding the process of building an NPM package.
+This repository contains a step-by-step guide to setting up an NPM package specifically designed for React projects, creating a custom hook, and testing it.
 
-You can find the tutorial here: https://dev.to/martinpersson/create-and-publish-your-first-npm-package-a-comprehensive-guide-3l0a
+You can find the tutorial here: https://dev.to/martinpersson/how-to-create-package-and-test-a-react-hook-with-npm-169k
